@@ -10,7 +10,7 @@ import co.com.sofkau.entrenamiento.curso.commands.AgregarDirectrizDeMentoria;
 import co.com.sofkau.entrenamiento.curso.values.Fecha;
 import co.com.sofkau.entrenamiento.curso.values.MentoriaId;
 
-public abstract class AgregarDirectrizDeMentoriaUseCase extends UseCase<RequestCommand<AgregarDirectrizDeMentoria>, ResponseEvents>  {
+public class AgregarDirectrizDeMentoriaUseCase extends UseCase<RequestCommand<AgregarDirectrizDeMentoria>, ResponseEvents>  {
     @Override
     public void executeUseCase(RequestCommand<AgregarDirectrizDeMentoria> agregarDirectrizDeMentoriaRequestCommand){
         var command = agregarDirectrizDeMentoriaRequestCommand.getCommand();
